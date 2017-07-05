@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="折叠模式之固定头部"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+    
+    <Button
+        android:id="@+id/btn_parallax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="折叠模式之视差系数"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+    
+    <Button
+        android:id="@+id/btn_image_fade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="折叠时显示渐变图片"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+    
+    <Button
+        android:id="@+id/btn_scroll_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="五种滚动标志"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+    
+    <Button
+        android:id="@+id/btn_alipay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="仿支付宝上拉滚动"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+    
+</LinearLayout>
