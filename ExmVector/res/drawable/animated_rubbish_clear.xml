@@ -1,0 +1,28 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/vector_rubbish_clear">
+
+    <target
+        android:name="clearGroupOne"
+        android:animation="@anim/anim_clear_group" />
+
+    <target
+        android:name="clearPathOne"
+        android:animation="@anim/anim_clear_path" />
+    
+    <target
+        android:name="clearGroupTwo"
+        android:animation="@anim/anim_clear_group" />
+
+    <target
+        android:name="clearPathTwo"
+        android:animation="@anim/anim_clear_path" />
+    
+    <target
+        android:name="clearGroupThree"
+        android:animation="@anim/anim_clear_group" />
+
+    <target
+        android:name="clearPathThree"
+        android:animation="@anim/anim_clear_path" />
+    
+</animated-vector>

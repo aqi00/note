@@ -1,0 +1,12 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/vector_clear">
+
+    <target
+        android:name="clearGroup"
+        android:animation="@anim/anim_clear_group" />
+
+    <target
+        android:name="clearPath"
+        android:animation="@anim/anim_clear_path" />
+    
+</animated-vector>
