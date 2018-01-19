@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+        "http://www.w3.org/TR/html4/loose.dtd">  
+<html>  
+<head>  
+  <title></title>  
+    <script type="text/javascript">  
+        //data数据类型为字符串，字符串里面是数组，每一个数组元素为一个json对象，例如"[{id:1,name:'张三',phone:'135656461'},{id:2,name:'李四',phone:'1896561'}]"  
+        function setContactInfo(data)  
+        {  
+            var tableObj = document.getElementById("contact");  
+            var jsonObjects = eval(data);   //通过eval方法处理得到json对象数组  
+            for(var i=0; i<jsonObjects.length; i++)  
+            {  
+                   var jsonObj = jsonObjects[i];    //获取json对象  
+                   var tr = tableObj.insertRow(tableObj.rows.length);   //添加一行  
+                   //添加三列  
+                   var td1 = tr.insertCell(0);  
+                   var td2 = tr.insertCell(1);  
+                   var td3 = tr.insertCell(2);  
+                     
+                   td1.innerHTML = jsonObj.id;  
+                   td2.innerHTML = jsonObj.name;  
+                   td3.innerHTML = jsonObj.phone;  
+            }  
+        }  
+  
+    </script>  
+</head>  
+<!--onload="javascript:myObject.init()调用服务器端init方法-->  
+<body onload="javascript:myObject.init()">  
+      <table id="contact">  
+          <tr>  
+              <td>编号</td>  
+              <td>姓名</td>  
+              <td>电话</td>  
+          </tr>  
+      </table>  
+</body>  
+</html>  
