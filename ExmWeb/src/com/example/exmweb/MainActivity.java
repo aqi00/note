@@ -19,6 +19,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		findViewById(R.id.btn_html).setOnClickListener(this);
 		findViewById(R.id.btn_script).setOnClickListener(this);
 		findViewById(R.id.btn_upload).setOnClickListener(this);
+		findViewById(R.id.btn_record).setOnClickListener(this);
 	}
 
 	@Override
@@ -37,6 +38,9 @@ public class MainActivity extends Activity implements OnClickListener {
 			startActivity(intent);
 		} else if (v.getId() == R.id.btn_upload) {
 			Intent intent = new Intent(this, UploadActivity.class);
+			startActivity(intent);
+		} else if (v.getId() == R.id.btn_record) {
+			Intent intent = new Intent(this, RecordActivity.class);
 			startActivity(intent);
 		}
 	}
