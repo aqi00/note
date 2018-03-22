@@ -51,6 +51,7 @@
         <activity android:name=".HTMLActivity" />
         <activity android:name=".ScriptActivity" />
         <activity android:name=".UploadActivity" />
+        <activity android:name=".RecordActivity" android:hardwareAccelerated="true" />
         
     </application>
 
