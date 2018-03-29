@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+		<title></title>
+		<style type="text/css">
+			#btn{
+				width:200px;
+				height:50px;
+				background:deeppink;
+				text-align:center;
+				line-height:50px;
+				margin:10px auto;
+			}
+			.album{
+				width:100%;
+				display:flex;
+				height:auto;
+				background:#999999;
+				min-height:200px;
+				justify-content:space-around;
+				flex-wrap:wrap;
+			}
+			.album>div{
+				width:33%;
+				height:auto;
+				min-height:200px;
+			}
+			.album>div>img,.album>div>video{
+				width:100%;
+				height:auto;
+				min-height:200px;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type='text/javascript' src="js/cslCamera.js"></script>
+	</head>
+	<body>
+		<div id="btn">点击拍照</div>
+		<div class="album"></div>
+	</body>
+	<script type="text/javascript">
+		var img=$(".img");
+		var callBack=function(album){
+			console.log(album);
+			console.log(img);
+			album.forEach(function(val,idx){
+				var div=$("<div></div>");
+				if (/image/g.test(val.type)){
+					var img = $('<img src="' + val.data + '">');
+					img[0].onload = function(e) {
+					div.append(img);
+					                    URL.revokeObjectURL(this.src);  // 释放createObjectURL创建的对象
+					                }
+				} else if(/video/g.test(val.type)){
+					var video = $('<video controls autoplay src="' + val.data + '">');
+					div.append(video);
+					//alert("src="+val.data);
+					video[0].onload = function(e) {
+					                    URL.revokeObjectURL(this.src);  // 释放createObjectURL创建的对象
+					                }
+				}
+				$(".album").append(div);
+			});
+		}
+		var carera=new $.Pgater($("#btn"),callBack);
+	</script>
+</html>

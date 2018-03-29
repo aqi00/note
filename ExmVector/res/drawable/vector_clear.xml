@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="100dp"
+    android:viewportHeight="100"
+    android:viewportWidth="100"
+    android:width="100dp" >
+
+    <group
+        android:name="clearGroup"
+        android:pivotX="50"
+        android:pivotY="50"
+        android:rotation="90" >
+        <path
+            android:name="clearPath"
+            android:fillColor="#6666ff"
+            android:pathData="
+            M 10,50
+            A 40 40 60 0 1 50 10
+            A 40 40 60 0 0 25 55
+            A 10 10 60 0 1 10 50"
+            android:strokeAlpha="1"
+            android:strokeColor="@color/transparent"
+            android:strokeLineCap="round"
+            android:strokeWidth="1" />
+    </group>
+
+</vector>

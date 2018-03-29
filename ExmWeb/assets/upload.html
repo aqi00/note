@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+      Insert title here
+    </title>
+<script type="text/javascript">
+   function getFilePath(){
+      var file = document.getElementById('choosefile');//获取input的节点
+      //为了安全性，这里获得的文件路径形如C:\fakepath\***，真实路径被隐藏了
+      var file_path = file.value;
+      alert(file_path);
+   }
+</script>
+  </head>
+  <body>
+    请选择文件
+<form enctype="multipart/form-data" action="" method="post">
+    <input type="file" id="choosefile" /><br/>
+    <input type="submit" value="上传文件" id="submitBtn" />
+</form>
+<button id="btntest" onclick="javascript:getFilePath()">获取上传文件路径</button>
+  </body>
+</html>

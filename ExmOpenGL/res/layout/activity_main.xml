@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_gl_cube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="三维立方体"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+    
+    <Button
+        android:id="@+id/btn_gl_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="三维球体"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+    
+    <Button
+        android:id="@+id/btn_gl_globe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="球体贴图"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+    
+    <Button
+        android:id="@+id/btn_gl_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Opengl显示翻页动画"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+    
+    <Button
+        android:id="@+id/btn_gl_panorama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="OpenGL全景照片"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+    
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="grey">#eeeeee</color>
+    <color name="dark_grey">#888888</color>
+    <color name="blue">#2DCD70</color>
+    <color name="gold">#ffffd700</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#50000000</color>
+    <color name="blue_light">#aaaaff</color>
+    <color name="green">#88ff88</color>
+    <color name="blue_dark">#1939a1</color>
+    
+    <drawable name="key_normal_color">#fcfcfc</drawable>
+    <drawable name="key_selected_color">#b8bcc0</drawable>
+    <drawable name="keyboard_bg_color">#acb3b6</drawable>
+    <drawable name="opkey_selected_color">#cbcfd5</drawable>
+</resources>

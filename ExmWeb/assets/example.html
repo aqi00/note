@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+      Insert title here
+    </title>
+    <script type="text/javascript">
+      function show2(){
+        var table = document.getElementById("personTable");
+          var td1 = tr.insertCell(0);
+          var td2 = tr.insertCell(1);
+          var td3 = tr.insertCell(2);
+          td1.innerHTML = "111";
+          td2.innerHTML = "111";
+          td3.innerHTML = "111";
+      }
+      function show(jsondata){
+        alert(jsondata);
+        var jsonobjs = eval(jsondata);
+        var table = document.getElementById("personTable");
+        for(var y=0; y<jsonobjs.length; y++){
+          var tr = table.insertRow(table.rows.length);
+          var td1 = tr.insertCell(0);
+          var td2 = tr.insertCell(1);
+          td2.align = "center";
+          var td3 = tr.insertCell(2);
+          td3.align = "center";
+          td1.innerHTML = jsonobjs[y].name;
+          td2.innerHTML = jsonobjs[y].amount;
+          td3.innerHTML = "<a href='javascript:contact.call(""+ jsonobjs[y].phone+ "")'>"+ jsonobjs[y].phone+ "</a>";
+        }
+      }
+    </script>
+  </head>
+  <body onload="javascript:contact.showcontacts()">
+    <table border="0" width="100%" id="personTable" cellspacing="0">
+      <tr>
+        <td width="30%">
+          姓名
+        </td>
+        <td width="30%" align="center">
+          存款
+        </td>
+        <td align="center">
+          电话
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="100dp"
+    android:viewportHeight="100"
+    android:viewportWidth="100"
+    android:width="100dp" >
+
+    <group
+        android:name="clearGroupOne"
+        android:pivotX="50"
+        android:pivotY="50"
+        android:rotation="0" >
+        <path
+            android:name="clearPathOne"
+            android:fillColor="#ff0000"
+            android:pathData="
+            M 10,50
+            A 40 40 60 0 1 50 10
+            A 40 40 60 0 0 25 55
+            A 10 10 60 0 1 10 50"
+            android:strokeAlpha="1"
+            android:strokeColor="@color/transparent"
+            android:strokeLineCap="round"
+            android:strokeWidth="1" />
+    </group>
+
+    <group
+        android:name="clearGroupTwo"
+        android:pivotX="50"
+        android:pivotY="50"
+        android:rotation="0" >
+        <path
+            android:name="clearPathTwo"
+            android:fillColor="#ff0000"
+            android:pathData="
+            M 70,15
+            A 40 40 60 0 1 85 70
+            A 40 40 60 0 0 58 26
+            A 10 10 60 0 1 70 15"
+            android:strokeAlpha="1"
+            android:strokeColor="@color/transparent"
+            android:strokeLineCap="round"
+            android:strokeWidth="1" />
+    </group>
+    
+    <group
+        android:name="clearGroupThree"
+        android:pivotX="50"
+        android:pivotY="50"
+        android:rotation="0" >
+        <path
+            android:name="clearPathThree"
+            android:fillColor="#ff0000"
+            android:pathData="
+            M 70,85
+            A 40 40 60 0 1 15 70
+            A 40 40 60 0 0 67 69
+            A 10 10 60 0 1 70 85"
+            android:strokeAlpha="1"
+            android:strokeColor="@color/transparent"
+            android:strokeLineCap="round"
+            android:strokeWidth="1" />
+    </group>
+    
+</vector>

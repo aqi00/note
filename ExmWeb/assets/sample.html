@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi" />
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript">
+   function showMsg(){
+      alert("hello world!");
+   }
+   function getMsg(){
+      return "来自网页的消息: hello world!";
+   }
+   function showMsgInAndroid(){
+      //contact.showMsg("hello world 3");
+      var result = contact.showMsg2("什么 hello world 3");
+      alert(result);
+   }
+</script>
+</HEAD>
+<BODY>
+<span>测试js使用</span>
+<button id="btntest" onclick="javascript:showMsgInAndroid()">调用android方法</button>
+</BODY>
+</HTML>
