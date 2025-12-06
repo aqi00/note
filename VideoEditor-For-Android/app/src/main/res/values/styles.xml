@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <declare-styleable name="FocusImageView">
+        <attr name="focus_focusing_id" format="integer" />
+        <attr name="focus_success_id" format="integer" />
+        <attr name="focus_fail_id" format="integer" />
+    </declare-styleable>
+    <!-- 弹出窗口样式 -->
+    <style name="dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- windowIsFloating属性很重要，true：弹窗（root参数被过滤） false：普通activity -->
+        <!--<item name="android:windowIsFloating">false</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">stateHidden|adjustResize</item>
+    </style>
+    <declare-styleable name="TitleView">
+        <attr name="title_text" format="string" />
+        <attr name="right_text" format="string" />
+        <attr name="right_num_text" format="string" />
+        <attr name="right_pic" format="reference" />
+        <attr name="left_pic" format="reference" />
+        <attr name="left_text" format="string" />
+        <attr name="title_background" format="color|reference" />
+        <attr name="title_underline" format="boolean" />
+    </declare-styleable>
+</resources>

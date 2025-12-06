@@ -1,0 +1,46 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        // 以下四行添加阿里云的仓库地址，方便国内开发者下载相关插件
+        maven { url = uri("https://maven.aliyun.com/repository/jcenter") }
+        maven { url = uri("https://maven.aliyun.com/repository/google")}
+        maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin")}
+        maven { url = uri("https://maven.aliyun.com/repository/public")}
+        // 以下添加华为的仓库地址，引入HMS需要
+        maven { url = uri("https://developer.huawei.com/repo/")}
+        // 引入RootEncoder需要
+        maven { url = uri("https://jitpack.io") }
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        //classpath 'com.android.tools.build:gradle:3.6.3'
+        classpath 'com.android.tools.build:gradle:4.2.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        // 以下四行添加阿里云的仓库地址，方便国内开发者下载相关插件
+        maven { url = uri("https://maven.aliyun.com/repository/jcenter") }
+        maven { url = uri("https://maven.aliyun.com/repository/google")}
+        maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin")}
+        maven { url = uri("https://maven.aliyun.com/repository/public")}
+        // 以下添加华为的仓库地址，引入HMS需要
+        maven { url = uri("https://developer.huawei.com/repo/")}
+        // 引入RootEncoder需要
+        maven { url = uri("https://jitpack.io") }
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
